@@ -1,0 +1,41 @@
+"*":
+  welcome:
+    showOnStartup: false
+  core:
+    themes: [
+      "one-dark-ui"
+      "solarized-dark-syntax"
+    ]
+    disabledPackages: [
+      "exception-reporting"
+      "metrics"
+      "open-on-github"
+      "background-tips"
+      "archive-view"
+      "dev-live-reload"
+      "image-view"
+      "package-generator"
+      "welcome"
+    ]
+    packagesWithKeymapsDisabled: [
+      "highlight-line"
+    ]
+  editor:
+    invisibles: {}
+    fontFamily: "Inconsolata"
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    tabLength: 4
+    fontSize: 16
+    lineHeight: 1.1
+    backUpBeforeSaving: true
+  "vim-mode":
+    useClipboardAsDefaultRegister: true
+    useSmartcaseForSearch: true
+  "autocomplete-plus": {}
+  "status-bar": {}
+  "one-dark-ui": {}
+  autosave: {}
+  "highlight-line":
+    hideHighlightOnSelect: true
