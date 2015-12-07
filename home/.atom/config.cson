@@ -16,6 +16,8 @@
       "image-view"
       "package-generator"
       "welcome"
+      "autocomplete-atom-api"
+      "autosave"
     ]
     packagesWithKeymapsDisabled: [
       "highlight-line"
@@ -39,3 +41,10 @@
   autosave: {}
   "highlight-line":
     hideHighlightOnSelect: true
+  tabs: {}
+  whitespace:
+    ensureSingleTrailingNewline: false
+    ignoreWhitespaceOnCurrentLine: false
+".text.xml":
+  editor:
+    tabLength: 2
