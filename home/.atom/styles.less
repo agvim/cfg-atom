@@ -11,31 +11,34 @@
  // to reuse solarized syntax theme variables
  @import "variables";
 
-/*
- * Examples
- * (To see them, uncomment and save)
- */
-
-// style the background color of the tree view
-.tree-view {
-  // background-color: whitesmoke;
-}
-
-// style the background and foreground colors on the atom-text-editor-element itself
-atom-text-editor {
-  // color: white;
-  // background-color: hsl(180, 24%, 12%);
-}
-
+// cursor line highlighting
 atom-text-editor::shadow {
-  // .cursor { border-color: red }
-
   // The cursor line important to use rgba for opacity, also requires !important
   // to override any theme.
   .line.highlight-line {
     background: @base02 !important;
-    // background: rgba(255, 0, 0, 1) !important;
-    // background: @syntax-wrap-guide-color !important;
   }
-  // .selection .region { background-color: @red }
+}
+
+// solarize vim mode indicator in the status bar
+.status-bar-vim-mode-normal,
+.status-bar-vim-mode-insert,
+.status-bar-vim-mode-visual {
+  font-weight: bold;
+  text-align: center;
+  color: @base3;
+  width: 7rem;
+  text-transform: uppercase;
+}
+
+.status-bar-vim-mode-normal {
+  background: @base1;
+}
+
+.status-bar-vim-mode-insert {
+  background: @yellow;
+}
+
+.status-bar-vim-mode-visual {
+  background: @magenta;
 }

@@ -1,11 +1,7 @@
 "*":
-  welcome:
-    showOnStartup: false
+  "autocomplete-plus": {}
+  autosave: {}
   core:
-    themes: [
-      "one-dark-ui"
-      "solarized-dark-syntax"
-    ]
     disabledPackages: [
       "exception-reporting"
       "metrics"
@@ -22,26 +18,32 @@
     packagesWithKeymapsDisabled: [
       "highlight-line"
     ]
+    themes: [
+      "one-dark-ui"
+      "solarized-dark-syntax"
+    ]
   editor:
-    invisibles: {}
+    backUpBeforeSaving: true
     fontFamily: "Inconsolata"
+    fontSize: 16
+    invisibles: {}
+    lineHeight: 1.1
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
     tabLength: 4
-    fontSize: 16
-    lineHeight: 1.1
-    backUpBeforeSaving: true
+  "highlight-line":
+    hideHighlightOnSelect: true
+  "one-dark-ui": {}
+  "status-bar": {}
+  tabs: {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
   "vim-mode":
     useClipboardAsDefaultRegister: true
     useSmartcaseForSearch: true
-  "autocomplete-plus": {}
-  "status-bar": {}
-  "one-dark-ui": {}
-  autosave: {}
-  "highlight-line":
-    hideHighlightOnSelect: true
-  tabs: {}
+  welcome:
+    showOnStartup: false
   whitespace:
     ensureSingleTrailingNewline: false
     ignoreWhitespaceOnCurrentLine: false
