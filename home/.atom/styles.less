@@ -8,10 +8,11 @@
  * If you are unfamiliar with Less, you can read more about it here:
  * http://lesscss.org
  */
- // to reuse solarized syntax theme variables
- @import "variables";
 
-// cursor line highlighting
+// to reuse solarized syntax theme variables
+@import "colors";
+
+// solarize cursor line highlighting
 atom-text-editor::shadow {
   // The cursor line important to use rgba for opacity, also requires !important
   // to override any theme.
@@ -30,15 +31,12 @@ atom-text-editor::shadow {
   width: 7rem;
   text-transform: uppercase;
 }
-
 .status-bar-vim-mode-normal {
   background: @base1;
 }
-
 .status-bar-vim-mode-insert {
   background: @yellow;
 }
-
 .status-bar-vim-mode-visual {
   background: @magenta;
 }
